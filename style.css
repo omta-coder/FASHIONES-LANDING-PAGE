@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#nav{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border: 1px solid #333;
+    padding: 0 5vw;
+}
+#nav h2{
+    font-size: 2vw;
+}
+#nav h5{
+    font-size: 1vw;
+}
+#nav span{
+    color: #C22850;
+}
+#prt2{
+    display: flex;
+    align-items: center;
+    gap: 3vw; 
+}
+#center{
+    height: calc(100% - 60px);
+    width: 100%;
+    display: flex;
+}
+#left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#left h1{
+    font-size: 7vw;
+    line-height: 6vw;
+    background: -webkit-linear-gradient(rgba(216, 97, 134, 0.4),#C32850, #333 );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 3vw;
+}
+#left button{
+    padding: 1vw 4vw;
+    font-size: 1.2vw;
+    border: none;
+}
+#btn1{
+    background-color: #EF475D;
+    color: #fff;
+    border-radius: 50px;
+    border-top-left-radius: 0;
+}
+#btn2{
+    background-color: #2B2D42;
+    color: #fff;
+    border-radius: 50px;
+    border-bottom-right-radius: 0;
+}
+#right{
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+#right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+@media (max-width:600px) {
+    
+    #nav{
+        height: 60px;
+    }
+    #nav h2{
+        font-size: 5vw;
+    }
+    #nav h5{
+        font-size: 2.2vw;
+    }
+    #center{
+        height: calc(100% - 60px);
+        width: 100%;
+        flex-direction: column;
+    }
+    #left{
+        height: 50%;
+        width: 100%;
+    }
+    #left h1{
+        font-size: 14vw;
+        line-height: 14vw;
+        margin-bottom: 5vw;
+    }
+    #left button{
+        padding: 2vw 8vw;
+        font-size: 3vw;
+        border: none;
+    }
+    #btn1{
+        background-color: #EF475D;
+        color: #fff;
+        border-radius: 50px;
+        border-top-left-radius: 0;
+    }
+    #btn2{
+        background-color: #2B2D42;
+        color: #fff;
+        border-radius: 50px;
+        border-bottom-right-radius: 0;
+    }
+    #right{
+        height: 50%;
+        width: 100%;
+    }
+    #right img{
+        width: 100%;
+    }
+}
